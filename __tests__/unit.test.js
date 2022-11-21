@@ -37,11 +37,11 @@ test('111-111-111 is not a an email', () => {
 
 
 // Function 3
-test('hhhh@ucsd.edu is a strong password', () => {
-    expect(functions.isStrongPassword("hhhh@ucsd.edu")).toBe(true);
+test('hhhhucsdedu is a strong password', () => {
+    expect(functions.isStrongPassword("hhhhucsdedu")).toBe(true);
   });
-test('1234@ucsd.edu is a strong password', () => {
-    expect(functions.isStrongPassword("1234@ucsd.edu")).toBe(true);
+test('ucsdedu is a strong password', () => {
+    expect(functions.isStrongPassword("ucsdedu")).toBe(true);
   });
 test('1 is not a strong password', () => {
     expect(functions.isStrongPassword("1")).toBe(false);
